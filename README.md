@@ -15,7 +15,9 @@ ________________________________________<br>
 •	Copper straight-through cables for LAN links; Serial DCE/DTE cable for WAN link <br>
 ________________________________________<br>
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1—S1—PC1/PC2 and R2—S2—PC3/PC4, plus R1–R2 Serial link S0/0/0.)<br>
+
+<img width="1366" height="768" alt="Screenshot 2026-11-26 160351" src="https://github.com/user-attachments/assets/8fef3004-da8b-4d50-801c-fd459595044b" />
+
 ________________________________________<br>
 Addressing Table (from activity)<br>
 Device	Interface	IP Address	Subnet Mask	Default Gateway<br>
@@ -110,12 +112,16 @@ ________________________________________<br>
 •	Show/verify: show interfaces, show interfaces serial 0/0/0, show interfaces g0/0, show ip interface brief, show ip route<br>
 •	Save: copy running-config startup-config / wr <br>
 ________________________________________<br>
-# Output (Attach Screenshots)
-•	show ip interface brief on R1 and R2 (after configuration)<br>
-•	show ip route on R1 and R2<br>
-•	Successful ping PC1 → PC4; R2 → PC2<br>
-•	Interface up messages after no shutdown on each link <br>
-________________________________________<br>
+# Output
+
+<img width="1366" height="768" alt="Screenshot 2026-11-26 160323" src="https://github.com/user-attachments/assets/ba3ffbee-3fcf-4a69-9277-cec4ac792aaa" />
+
+<img width="1365" height="768" alt="Screenshot 2026-11-26 160339" src="https://github.com/user-attachments/assets/56d41342-e083-40bc-b85e-6d97660f519d" />
+
+<img width="1366" height="768" alt="Screenshot 2026-11-26 160426" src="https://github.com/user-attachments/assets/fcc8dd92-7a8b-48dc-b6dd-6e25d3cc11b6" />
+
+<img width="1366" height="768" alt="Screenshot 2026-11-26 160410" src="https://github.com/user-attachments/assets/00d3e2aa-6c0d-4835-9469-59a6f317c1d1" />
+_______________________________________<br>
 # Result
 R1 and R2 were configured with correct IPv4 addresses and interface descriptions, links were brought up, routing tables showed connected networks, and end-to-end connectivity between PCs across the WAN link was verified using pings. The configurations were saved to NVRAM for persistence.<br>
 
